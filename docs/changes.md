@@ -1,20 +1,20 @@
-# Magisk Changelog
+#Magisk Changelog
 
 ### v28.0
 
-- [General] Support 16k page size
-- [General] Add basic support for RISC-V (not built in releases)
-- [General] Use a minimal libc to build static executables (`magiskinit` and `magiskboot`) for smaller sizes
-- [Core] Remove unnecessary mirror for magic mount
-- [Core] Update boot image detection logic to support more devices
-- [MagiskInit] Rewrite 2SI logic for injecting `magiskinit` as `init`
-- [MagiskInit] Update preinit partition detection
-- [Zygisk] Update internal JNI hooking implementation
-- [MagiskPolicy] Preserve sepolicy config flag after patching
-- [MagiskPolicy] Optimize patching rules to reduce the amount of new rules being injected
-- [DenyList] Support enforcing denylist when Zygisk is disabled
-- [Resetprop] Improve implementation to workaround several property modification detections
-- [Resetprop] Update to properly work with property overlays
+- [普遍的]支持16k页面大小
+- [普遍的]添加对RISC-V的基本支持（非内置版本）
+- [普遍的]使用最小libc构建静态可执行文件`magiskinit`和`magiskboot`）较小尺寸
+- [核心]删除魔法坐骑不必要的镜子
+- [核心]更新开机图像检测逻辑以支持更多设备
+- [MagiskInit]重写注入的2SI逻辑`magiskinit`阿`我`
+- [MagiskInit]更新预分区检测
+- [济吉斯克]更新内部JNI挂钩实现
+- [MagiskPolicy]修补后保留sepolicy配置标志
+- [MagiskPolicy]优化修补规则以减少注入的新规则数量
+- [DenyList]禁用Zygisk时支持强制执行denylist
+- [Resetprop]几种属性修改检测的改进实现
+- [Resetprop]更新以正确使用属性覆盖
 - [App] Major internal code refactoring
 - [App] Support patching Samsung firmware with images larger than 8GiB
 - [App] Use user-initiated job instead of foreground services on Android 14
